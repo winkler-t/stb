@@ -12,7 +12,7 @@ file(GLOB_RECURSE SOURCE_FILES ./*.cpp ./*.c)
 file(GLOB_RECURSE HEADER_FILES ./*.hpp ./*.h)
 
 # stb library
-add_executable(stb ${SOURCE_FILES} ${HEADER_FILES})
+add_library(stb ${SOURCE_FILES} ${HEADER_FILES})
 source_group("Source Files" FILES ${SOURCE_FILES})
 source_group("Header Files" FILES ${HEADER_FILES})
 
